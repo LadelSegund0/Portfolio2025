@@ -180,6 +180,15 @@
                     details: "Alerta de Defender sobre 'Backdoor:PHP/Krebshell'. Inicié protocolo de contención aislando el host. La investigación reveló que no había persistencia en registro ni servidor web activo. El análisis de contexto identificó al usuario como personal de seguridad realizando pruebas. Clasificado como 'True Positive / Benign Intent' y restaurado el servicio.",
                     tools: ["Live Response", "Registry Analysis", "Context"]
                 }
+				{
+                    id: "ceo-phishing",
+                    title: "Investigación Phishing C-Level",
+                    tag: "Threat Intel / Social Eng.",
+                    date: "Dec 2025",
+                    summary: "Descarte de malware en campaña de suplantación dirigida a directivos.",
+                    details: "Investigación de Spear Phishing (suplantación de Isaac Guerra). Se analizó el .eml en ANY.RUN revisando IOCs y tráfico HTTP. Se investigó una alerta de Suricata (Microsoft Dr. Watson) determinando que era un Falso Positivo asociado a telemetría legítima y no a tráfico C2. Confirmada la ausencia de payload o ejecución maliciosa en Outlook, se reclasificó como Ingeniería Social pura. Se aplicó bloqueo de remitente y 'Píldora de Advertencia' al usuario.",
+                    tools: ["ANY.RUN", "Suricata IDS", "Traffic Analysis", "Email Header Analysis"]
+                }
             ],
             skills: {
                 security: ["Microsoft Defender EDR", "Fortinet FortiGate", "Incident Response", "Threat Hunting", "Forensics Basics", "Wazuh (Lab)", "ANY.RUN"],
@@ -467,4 +476,5 @@
         .animate-fade-in { animation: fadeIn 0.4s ease-out forwards; }
     </style>
 </body>
+
 </html>
