@@ -199,6 +199,15 @@
                     tools: ["Defender for Endpoint", "PowerShell Decoding", "AMSI", "Firewalling"]
                 },
 				{
+                    id: "shadow-it-risk",
+                    title: "Mitigación Riesgo Crítico (Shadow IT)",
+                    tag: "Vuln. Mgmt / Hardening",
+                    date: "Jan 2026",
+                    summary: "Neutralización de vector de ataque crítico: Activo legacy con riesgo de Credential Dumping.",
+                    details: "Detección proactiva mediante Defender TVM de un dispositivo no gestionado con severidad crítica (+100 vulnerabilidades CVE altas). El activo almacenaba credenciales en caché de una cuenta con privilegios elevados, exponiendo a la organización a técnicas de 'Credential Dumping' y desplazamiento lateral. Se ejecutó un plan de remediación: migración de datos críticos a SharePoint, revocación de credenciales expuestas y decomiso definitivo del hardware, eliminando el riesgo de compromiso del dominio.",
+                    tools: ["Defender TVM", "Credential Guard", "Risk Assessment", "Shadow IT Remediation"]
+                },
+				{
                     id: "ceo-phishing",
                     title: "Investigación Phishing C-Level",
                     tag: "Threat Intel / Social Eng.",
@@ -496,6 +505,7 @@
 </body>
 
 </html>
+
 
 
 
